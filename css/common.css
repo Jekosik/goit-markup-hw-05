@@ -94,6 +94,16 @@ ul{
     background: #2196F3;
     border-radius: 2px;
 
+    animation: lower-border 2000ms ease-in-out infinite alternate;
+}
+
+@keyframes lower-border{
+    0%{
+        left: -105%;
+    }
+    100%{
+        left: 105%;
+    }
 }
 
 
