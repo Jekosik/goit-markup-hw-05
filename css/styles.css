@@ -373,28 +373,49 @@ img{
 }
 
 .clients-compani{
+    position: relative;
+    
+}
+
+.clients-icon{
+    fill: #afb1b8;
+    height: 90px;
+    transition: fill 250ms var(--cubic);
+}
+
+.clients-link::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: block;
+    content: '';
+    width: 170px;
+    height: 90px;
+
     border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    fill: #afb1b8;  
+    border-radius: 4px; 
+
 }
 
 .clients-link{
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90px;
-    fill: inherit;
     outline: none;
     transition: fill 250ms var(--cubic);
 }
 
 
-
-.clients-link:hover,
-.clients-link:focus{
+.clients-link:hover .clients-icon {
     fill: var(--accent-color);
-    border: 1px solid var(--accent-color);
 }
+
+.clients-compani:hover ::before{
+    border: 1px solid  var(--accent-color);
+}
+
 
 
 /* Модалка */
