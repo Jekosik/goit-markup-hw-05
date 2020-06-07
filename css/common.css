@@ -19,19 +19,21 @@ body{
 }
 
 .logo{
-    margin-right: 85px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-
-    color: var(--accent-color);
-
     font-family: Raleway, sans-serif ;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
     outline: none;
+
+    margin-right: 85px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    color: var(--accent-color);
 }
+
+
 .logo:hover,
 .logo:focus{
     color: var(--accent-color);
@@ -58,6 +60,7 @@ ul{
 .site-nav .link{
     position: relative;
     display: flex;
+    transition: color 250ms var(--cubic);
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -66,7 +69,6 @@ ul{
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    transition: color 250ms var(--cubic);
 }
 
 .site-nav .link:hover, 

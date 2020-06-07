@@ -353,7 +353,6 @@ img{
 .commands-case .commands-link:hover > .commands-icon,
 .commands-case .commands-link:focus > .commands-icon{
     fill: var(--wite-color);
-    background-color: var(--accent-color);
 }
 
 
